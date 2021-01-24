@@ -3,7 +3,7 @@ MAINTAINER ramesh
 RUN mkdir  ~/app
 WORKDIR ~/app
 COPY . .
-npm install
-npm run build
+RUN npm install
+RUN npm run build
 EXPOSE 8080
 CMD ["npm start"]
